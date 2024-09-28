@@ -1,0 +1,128 @@
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visita Virtual Museo de Antropología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-content" style="display: none;"></div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/HALO blanco.png" alt="Logotipo">
+        </div>
+        <div class="menu-icon" id="menuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="page" class="page">
+        <div class="content-wrapper ">
+            <img src="/img/back2.png" alt="Fondo" class="background-img">
+            <div class="content-rect">
+                <iframe src="https://www.inah.gob.mx/images/recorridos-virtuales/mna-pt1/" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            
+            
+        </div>
+        <div class="animated-title">
+            <h1>Visita Virtual <br>Museo de Antropología</h1>
+        </div>
+        <div class="popup-container">
+            <button class="transparent-button" onclick="togglePopup()">VER DESCRIPCIÓN</button>
+        </div>
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="togglePopup()">&times;</span>
+                <h2>¡Bienvenido al Museo de Antropología!</h2>
+                <p>Embárcate en un viaje a través de la historia y la cultura humana. Nuestro museo ofrece una impresionante colección de artefactos, desde esculturas antiguas hasta herramientas prehistóricas, que revelan la evolución de las civilizaciones. Explora exhibiciones interactivas y aprende sobre las tradiciones, costumbres y logros de diversas culturas alrededor del mundo. Ideal para familias, estudiantes y cualquier amante de la historia. ¡Ven a descubrir, aprender y asombrarte!</p>
+            </div>
+        </div>
+        <div class="controls-container">
+            <div class="controls">
+                <a href="/page1.html" class="control prev">&lt;</a>
+                <span class="slide-indicator">2/6</span>
+                <a href="/page3.html" class="control next">&gt;</a>
+            </div>
+            <div class="index-menu">
+                <button class="index-toggle">Índice</button>
+                <div class="index-content">
+                    <a href="/page1.html" class="index-item">
+                        <img src="/img/Portadaindice.png" alt="Slide 1">
+                        <span class="index-title">Bienvenida</span> <!-- Título del Slide 1 -->
+                    </a>
+                    
+                    <a href="/page2.html" class="index-item">
+                        <img src="/img/recorrido-museo.png" alt="Slide 2">
+                        <span class="index-title">Explora México</span> <!-- Título del Slide 2 -->
+                    </a>
+                    
+                    <a href="/page3.html" class="index-item">
+                        <img src="/img/recorrido-teotihuacan.png" alt="Slide 3">
+                        <span class="index-title">Nuestra Cultura</span> <!-- Título del Slide 3 -->
+                    </a>
+                    
+                    <a href="/page4.html" class="index-item">
+                        <img src="/img/INDICE-mapa.png" alt="Slide 4">
+                        <span class="index-title">Gastronomía</span> <!-- Título del Slide 4 -->
+                    </a>
+                    
+                    <a href="/page5.html" class="index-item">
+                        <img src="/img/indicepodcast.png" alt="Slide 5">
+                        <span class="index-title">Historia y Tradición</span> <!-- Título del Slide 5 -->
+                    </a>
+                    
+                    <a href="/page6.html" class="index-item">
+                        <img src="/img/gastronomia.png" alt="Slide 6">
+                        <span class="index-title">Lugares Increíbles</span> <!-- Título del Slide 6 -->
+                    </a>
+                    
+                    <a href="/page7.html" class="index-item">
+                        <img src="/img/INDICE-filtro.png" alt="Slide 7">
+                        <span class="index-title">Naturaleza Viva</span> <!-- Título del Slide 7 -->
+                    </a>
+                    
+                    <a href="/page8.html" class="index-item">
+                        <img src="/img/inteligencia.png" alt="Slide 8">
+                        <span class="index-title">Arte y Artesanías</span> <!-- Título del Slide 8 -->
+                    </a>
+                    <!-- Agregar más slides aquí -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="scripts.js"></script>
+<script>
+    // Toggle menu for mobile
+    document.getElementById('menuIcon').addEventListener('click', function() {
+        document.getElementById('navLinks').classList.toggle('active');
+    });
+     // Toggle the index menu on click
+     document.querySelector('.index-toggle').addEventListener('click', function() {
+            document.querySelector('.index-menu').classList.toggle('active');
+        });
+        // scripts.js
+
+document.querySelector('.index-toggle').addEventListener('click', function() {
+    const indexContent = document.querySelector('.index-content');
+    indexContent.style.display = indexContent.style.display === 'block' ? 'none' : 'block';
+});
+
+document.querySelector('.index-toggle').addEventListener('click', function() {
+    const indexContent = document.querySelector('.index-content');
+    indexContent.classList.toggle('show');
+});
+
+</script>
+</html>

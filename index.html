@@ -1,599 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HALO - Revista Digital</title>
-      <!--favicon-img--> 
-   <link rel="icon" type="image/png" href="images/favicon.png">
-   <!--favicon-img-->
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
+<body>
+    <div id="loader">
+        <img src="img/HALO negro.png" alt="Logo">
+    </div>
 
-    <div id="all">
-  <div id="preloader">
-    <div class="p">HALO Revista Digital</div>
-</div>
-<div id="breaker"></div>
-
-      <div class="cursor scale"></div>
-      <div class="cursor-two  scale"></div>
-      <!-- HOME -->
-      <div id="home">
-    
-        <div class="navigation">
-        
-          <div class="logo home-link fade-down">
-           <a href="#">HALO REVISTA DIGITAL</a>
-          </div>
-        
-          <div class="navigation-links">
-            <ul>
-              <li class="links   fade-down"><a href="#">Acerca de</a></li><!-- about-link -->
-              <li class="links  fade-down"><a href="#">Contactános</a></li> <!-- contact-link -->
-            </ul>
-          </div>
-        
-        </div>
-        
-              <div class="slider">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-12 p-0">
-                      <div class="swiper-container parallax-slider">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="img-container one">
-                              <div class="slide-text opacity">
-                                <a href="/HALO-RevistaDigital/v2/index.html" class="">Corazón de México 
-                                  <div class="view-project">Revista Digital <br>01/09/2024 <br>Autor; Kevin Martinez</div>
-                               </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="img-container two">
-                              <div class="slide-text opacity">
-                                <a href="#" class="project-link ">Mariposa Monarca
-                                  <div class="view-project">Revista Digital <br>01/09/2024 <br>Autor; Kevin Martinez</div>
-                                </a><!-- forest-project-link -->
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="img-container three">
-                              <div class="slide-text opacity">
-                                <a href="#" class="project-link ">Dia de Muertos
-                                  <div class="view-project">Revista Digital <br>01/09/2024 <br>Autor; Kevin Martinez</div>
-
-                                </a><!-- wildlife-project-link -->
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="img-container four">
-                              <div class="slide-text opacity">
-                                <a href="#" class="project-link ">Los Mayas
-                                  <div class="view-project">Revista Digital <br>01/09/2024 <br>Autor; Kevin Martinez</div>
-
-                                </a> <!-- city-project-link -->
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <!-- slider controls -->
-                        <div class="slider-controls fade-up-two">
-                          <div class="control">
-                            <div class="swiper-nav-ctrl prev-ctrl">
-                              <img src="images/prev.png" alt="prev" class="slider-control-image">
-                            </div>
-                          </div>
-                          <div class="swiper-pagination-container">
-                            <div class="control">
-                              <div class="swiper-pagination"></div>
-                            </div>
-                          </div>
-                          <div class="control">
-                            <div class="swiper-nav-ctrl next-ctrl">
-                              <img src="images/next.png" alt="next" class="slider-control-image">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <video autoplay muted loop class="video-bg">
+                    <!-- <source src="/HALO-RevistaDigital/v2/mp4/video1.mp4" type="video/mp4" id="myVideo" autoplay muted controls loop> -->
+                    <source src="/v2/mp4/video1.mp4" type="video/mp4" id="myVideo" autoplay muted controls loop>
+                    <button id="muteButton" class="mute-toggle">Unmute</button>
+                </video>
+                <div class="content">
+                    <h2>Tu ventana digital al corazón de México.</h2>
+                    <p>Explora nuestro vibrante país a través de visitas virtuales, podcasts fascinantes, códigos QR interactivos y videos inmersivos que celebran nuestra gastronomía y tradiciones. ¡Descubre México como nunca antes!</p>
                 </div>
-              </div>
-              <div class="scroll-icon fade-up">
-                <i class="gg-mouse"></i>
-              </div>
-              <div class="social-media-links">
-                <ul>
-                  <li class="fade-up"> <a href="#">FB</a> </li>
-                  <li class="fade-up"> <a href="#">IN</a> </li>
-                  <li class="fade-up"><a href="#">TW</a> </li>
-                </ul>
-              </div>
             </div>
-      <!-- HOME -->
-
-
-      <!-- ABOUT -->
-<div id="about">
-<div id="about-color"></div>
-<div class="navigation navigation-about">
-        
-  <div class="logo home-link about-opacity">
-   <a href="#"> JAMES TYLER</a>
-  </div>
-
-  <div class="navigation-links about-opacity">
-   <div class="navigation-close hover about-close">
-     <div class="navigation-close-line"></div>
-     <div class="navigation-close-line"></div>
-   </div>
-  </div>
-
-</div>
-  <div class="about-content">
-  <div class="container-fluid m-0 p-0">
-    <div class="row">
-    <div class="col-0 col-md-0 col-lg-6 col-sm-0 col-xs-0 p-0 m-0">
-      <div class="about-img ">
-      </div>
-    </div>
-   <div class="col-12 col-md-12 col-lg-6 col-sm-12 col-xs-12 p-0 m-0">
-     <div class="about-text">
-       <div class="about-text-container about-opacity">
-       <div class="about-text-header">
-Hi , I'm a 22 y/o Canadian photographer,
-graduated in 2009
-       </div>
-       <div class="about-text-paragraph">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex debitis, nisi minima tempore repudiandae. 
-       </div>
-       <div class="about-text-paragraph">
-        similique quis quos, reiciendis dignissimos doloremque sequi eius esse qui. A iste blanditiis fugiat necessitatibus voluptatibus.
-      </div>
-       <div class="about-text-button">
-         <button class="contact-link-about contact-button hover">Contact Me</button>
-       </div>
-     </div>
-    </div>
-   </div>
-  </div>
-    </div>
-  <div class="social-media-links about-opacity">
-    <ul>
-      <li> <a href="#">FB</a> </li>
-      <li> <a href="#">IN</a> </li>
-      <li> <a href="#">TW</a> </li>
-    </ul>
-  </div>
-</div>
-</div>
-      <!-- ABOUT -->
-
-      <!-- PROJECTS -->
-      <div id="projects">
-
-        <!-- MARINE PROJECT -->
-        <div class="project marine-project">
-          <div class="navigation navigation-project">
-                
-            <div class="logo home-link about-opacity">
-             <a href="#"> HALO Revista Digital</a>
+            <div class="slide virtual-tour-container">
+               
+                <iframe src="https://www.inah.gob.mx/images/recorridos-virtuales/mna-pt1/" frameborder="0" allowfullscreen></iframe>
+                <div class="content">
+                    <h2>Visita Virtual Museo de Antropología</h2>
+                    <p>Explora este recorrido virtual</p>
+                </div>
             </div>
-          
-            <div class="navigation-links about-opacity">
-             <div class="navigation-close hover marine-close">
-               <div class="navigation-close-line"></div>
-               <div class="navigation-close-line"></div>
-             </div>
+
+            <div class="slide virtual-tour-container">
+               
+                <iframe src="https://www.inah.gob.mx/images/recorridos-virtuales/teotihuacan/" frameborder="0"></iframe>
+                <div class="content">
+                    <h2>Visita Virtual Teotihuacán</h2>
+                    <p>Explora este recorrido virtual</p>
+                </div>
             </div>
-          
-          </div>
-          <div class="col-12 p-0 m-0">
-         <div class="slideshow-container">
-          <div class="slides fullscreen-container">
-            <video class="fullscreen-video" id="myVideo" src="mp4/video1.mp4" autoplay muted controls loop></video>
-            <button id="muteButton" class="mute-toggle">Unmute</button>
-            <div class="overlay">
-                <h2>Tu ventana digital al corazón de México.</h2> 
-                <p>Explora nuestro vibrante país a través de visitas virtuales, podcasts fascinantes, códigos QR interactivos y videos inmersivos que celebran nuestra gastronomía y tradiciones. ¡Descubre México como nunca antes!</p>
+
+            <div class="slide virtual-tour-container">
+               
+                <div class="map-section">
+                    <!-- <img src="/HALO-RevistaDigital/v2/img/mapabg.jpg" alt="Mapa de fondo" class="map-background"> -->
+                    <img src="/v2/img/mapabg.jpg" alt="Mapa de fondo" class="map-background">
+                    
+                    <!-- Pin 1 -->
+                    <div class="pin" id="pin1" style="top: 20%; left: 30%;">
+                        <div class="info">
+                            <h3>Auditorio / Campo Marte</h3>
+                            <p>Conocido por ser un centro de arte y encuentro. Éste espacio reúne a grandes personalidades de las artes escénicas del mundo. <br> Avenida Paseo de la Reforma, muy cerca del Bosque de Chapultepec.</p>
+                            <!-- <img src="/HALO-RevistaDigital/v2/img/auditorio.jpg" alt="Imagen relacionada 1" class="pin-image"> -->
+                            <img src="/v2/img/auditorio.jpg" alt="Imagen relacionada 1" class="pin-image">
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Pin 2 -->
+                    <div class="pin" id="pin2" style="top: 50%; left: 50%;">
+                        <div class="info">
+                            <h3>Museo Arte Moderno</h3>
+                            <p>El recinto cuenta con una exposición excepcional que abarca un arco temporal desde 1920 hasta la fecha.
+<br>
+                                Avenida Paseo de la Reforma, dentro del Bosque de Chapultepec.</p>
+                                <!-- <img src="/HALO-RevistaDigital/v2/img/2.jpg" alt="Imagen relacionada 2" class="pin-image"> -->
+                            <img src="/v2/img/2.jpg" alt="Imagen relacionada 2" class="pin-image">
+                        </div>
+                    </div>
+                    
+                    <!-- Pin 3 -->
+                    <div class="pin" id="pin3" style="top: 20%; left: 80%;">
+                        <div class="info">
+                            <h3>Monumento a la Independencia</h3>
+                            <p>Es conocido por todas y todos como el Ángel de la Independencia y es el punto de encuentro para celebrar cualquier triunfo de México en el mundo.
+<br>
+                                Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 06500, Ciudad de México.</p>
+                                 <!-- <img src="/HALO-RevistaDigital/v2/img/3.jpg" alt="Imagen relacionada 3" class="pin-image"> -->
+                            <img src="/v2/img/3.jpg" alt="Imagen relacionada 3" class="pin-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>Mapa Interativo Ciudad de México</h2>
+                    <p>Conoce estos maravillosos lugares.</p>
+                </div>
             </div>
-        </div>        
-           <div class="slides">
-            <div class="virtual-tour-container">
-              <iframe src="https://www.inah.gob.mx/images/recorridos-virtuales/mna-pt1/" frameborder="0" allowfullscreen></iframe>
-          </div>
-          
-          </div>
-           <div class="slides">
-            <div class="virtual-tour-container">
-              <iframe src="https://www.inah.gob.mx/images/recorridos-virtuales/teotihuacan/" frameborder="0" allowfullscreen></iframe>
-          </div>
-           </div>
-           <div class="slides">
-            hefer
-          
-          
-           </div>
-           <div class="slides">
-             <img src="images/marine-image-two.webp" alt="marine-image">
-           </div>
-         </div>
-        
-         </div>
-         <div class="controls">
-          <button id ="prev" class="hover"><img src="images/prev.png" alt="" class="imgs"></button>
-          <button id ="next" class="hover"><img src="images/next.png" alt="" class="imgs"></button>
-        </div>
-        <div class="project-name">
-          Corazón de México
-        </div>
-        <div class="social-media-links opacity">
-          <ul>
-            <li> <a href="#">FB</a> </li>
-            <li> <a href="#">IN</a> </li>
-            <li> <a href="#">TW</a> </li>
-          </ul>
-        </div>
-        </div>
-<!-- MARINE PROJECT -->
-
-<!-- FOREST PROJECT -->
-<div class="project forest-project">
-  <div class="navigation navigation-project">
-        
-    <div class="logo home-link about-opacity">
-     <a href="#"> JAMES TYLER</a>
-    </div>
-  
-    <div class="navigation-links about-opacity">
-     <div class="navigation-close hover forest-close">
-       <div class="navigation-close-line"></div>
-       <div class="navigation-close-line"></div>
-     </div>
-    </div>
-  
-  </div>
-  <div class="col-12 p-0 m-0">
- <div class="slideshow">
-   <div class="forest-slides">
-     <img src="images/header-image-two.webp" alt="marine-image">
-   </div>
-   <div class="forest-slides">
-     <img src="images/forest-image-two.webp" alt="marine-image">
-   </div>
-   <div class="forest-slides">
-     <img src="images/forest-image-three.webp" alt="marine-image">
-   </div>
-   <div class="forest-slides">
-     <img src="images/forest-image-five.webp" alt="marine-image">
-   </div>
-   <div class="forest-slides">
-     <img src="images/forest-image-six.webp" alt="marine-image">
-   </div>
- </div>
-
- </div>
- <div class="controls">
-  <button id ="forest-prev" class="hover"><img src="images/prev.png" alt="prev" class="imgs"></button>
-  <button id ="forest-next" class="hover"><img src="images/next.png" alt="next" class="imgs"></button>
-</div>
-<div class="project-name">
-  FOREST
-</div>
-<div class="social-media-links opacity">
-  <ul>
-    <li> <a href="#">FB</a> </li>
-    <li> <a href="#">IN</a> </li>
-    <li> <a href="#">TW</a> </li>
-  </ul>
-</div>
-      </div>
-<!-- FOREST PROJECT -->
-
-<!-- wildlife PROJECT -->
-<div class="project wildlife-project">
-  <div class="navigation navigation-project">
-        
-    <div class="logo home-link about-opacity">
-     <a href="#"> JAMES TYLER</a>
-    </div>
-  
-    <div class="navigation-links about-opacity">
-     <div class="navigation-close hover wildlife-close">
-       <div class="navigation-close-line"></div>
-       <div class="navigation-close-line"></div>
-     </div>
-    </div>
-  
-  </div>
-  <div class="col-12 p-0 m-0">
- <div class="slideshow">
-   <div class="wildlife-slides">
-     <img src="images/header-image-three.webp" alt="marine-image">
-   </div>
-   <div class="wildlife-slides">
-     <img src="images/wildlife-image-two.webp" alt="marine-image">
-   </div>
-   <div class="wildlife-slides">
-     <img src="images/wildlife-image-three.webp" alt="marine-image">
-   </div>
-   <div class="wildlife-slides">
-     <img src="images/wildlife-image-four.webp" alt="marine-image">
-   </div>
-   <div class="wildlife-slides">
-     <img src="images/wildlife-image-five.webp" alt="marine-image">
-   </div>
-   <div class="wildlife-slides">
-     <img src="images/wildlife-image-six.webp" alt="marine-image">
-   </div>
- </div>
-
- </div>
- <div class="controls">
-  <button id ="wildlife-prev" class="hover"><img src="images/prev.png" alt="prev" class="imgs"></button>
-  <button id ="wildlife-next" class="hover"><img src="images/next.png" alt="next" class="imgs"></button>
-</div>
-<div class="project-name">
-  wildlife
-</div>
-<div class="social-media-links opacity">
-  <ul>
-    <li> <a href="#">FB</a> </li>
-    <li> <a href="#">IN</a> </li>
-    <li> <a href="#">TW</a> </li>
-  </ul>
-</div>
-      </div>
-<!-- wildlife PROJECT -->
-
-<!-- wildlife PROJECT -->
-<div class="project city-project">
-  <div class="navigation navigation-project">
-        
-    <div class="logo home-link about-opacity">
-     <a href="#"> JAMES TYLER</a>
-    </div>
-  
-    <div class="navigation-links about-opacity">
-     <div class="navigation-close hover city-close">
-       <div class="navigation-close-line"></div>
-       <div class="navigation-close-line"></div>
-     </div>
-    </div>
-  
-  </div>
-  <div class="col-12 p-0 m-0">
- <div class="slideshow">
-   <div class="city-slides">
-     <img src="images/header-image-four.webp" alt="city-image">
-   </div>
-   <div class="city-slides">
-    <img src="images/city-two.webp" alt="city-image">
-  </div>
-   <div class="city-slides">
-     <img src="images/city-image-three.webp" alt="city-image">
-   </div>
-   <div class="city-slides">
-     <img src="images/city-image-four.webp" alt="city-image">
-   </div>
-   <div class="city-slides">
-     <img src="images/city-image-five.webp" alt="city-image">
-   </div>
- </div>
-
- </div>
- <div class="controls">
-  <button id ="city-prev" class="hover"><img src="images/prev.png" alt="prev" class="imgs"></button>
-  <button id ="city-next" class="hover"><img src="images/next.png" alt="next" class="imgs"></button>
-</div>
-<div class="project-name">
-  CITY
-</div>
-<div class="social-media-links opacity">
-  <ul>
-    <li> <a href="#">FB</a> </li>
-    <li> <a href="#">IN</a> </li>
-    <li> <a href="#">TW</a> </li>
-  </ul>
-</div>
-      </div>
-<!-- CITY PROJECT -->
-
-
-      <!-- PROJECTS -->
-    </div>
-
-<!--CONTACT PAGE-->
-<div id="contact">
-  <div class="navigation navigation-contact">
-        
-    <div class="logo home-link contact-opacity">
-     <a href="#">JAMES TYLER</a>
-    </div>
-  
-    <div class="navigation-links contact-opacity">
-     <div class="navigation-close hover contact-close">
-       <div class="navigation-close-line"></div>
-       <div class="navigation-close-line"></div>
-     </div>
-    </div>
-  
-  </div>
-  <div class="contact-header contact-opacity">
-    getting in touch is easy.
-  </div>
-<div class="container-fluid">
-  <div class="row p-0 m-0">
-  
-      <div class="col-12 col-md-12 col-lg-12 col-sm-12 col-xs-12 p-0 m-0">
-        <div class="form contact-opacity" autocomplete="false">
-          <form  id ="myForm" action="mail.php">
-            <div class="input-line">
-              <input id="name" type="text" placeholder="name" class="input-same-line">
-              <input id="email" type="email" placeholder="email" class="input-same-line">
+            <div class="slide">
+            <div class="podcast-section">
+                <h2>Escucha nuestro Podcast</h2>
+                <div class="spotify-embed podcast-section">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6hbYtT71Elwds3jQNFtKAU?utm_source=generator&t=13432" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
             </div>
-            <div class="input-line-column">
-              <input id="subject" type="text" placeholder="subject">
-              <textarea name="textarea" id="body" class="textarea" placeholder="message"></textarea>
+        </div>
+
+            <div class="slide">
+                <video autoplay muted loop class="video-bg">
+                    <!--  <source src="/HALO-RevistaDigital/v2/mp4/video2.mp4" type="video/mp4" id="myVideo" autoplay muted controls loop> -->
+                    <source src="/v2/mp4/video2.mp4" type="video/mp4" id="myVideo" autoplay muted controls loop>
+                    <button id="muteButton" class="mute-toggle">Unmute</button>
+                </video>
+                <div class="content">
+                    <h2>Gastronomía Mexicana</h2>
+                    <p></p>
+                </div>
             </div>
-           <button type="button" id="submit" class="hover">Send</button>
-          </form>
+
+            <div class="slide">
+                <video autoplay muted loop class="video-bg">
+                    <!--  <source src="/HALO-RevistaDigital/v2/mp4/video3.mp4" type="video/mp4" id="myVideo" autoplay muted controls loop> -->
+                    <source src="/v2/mp4/video3.mp4" type="video/mp4" id="myVideo" autoplay muted controls loop>
+
+                    <button id="muteButton" class="mute-toggle">Unmute</button>
+                </video>
+                <div class="content">
+                    <h2>Festival Día de Muertos</h2>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <!-- <img src="/HALO-RevistaDigital/v2/img/snapchat-día-de-muertos.webp" alt="" class="fullscreen-image"> -->
+                <img src="/v2/img/snapchat-día-de-muertos.webp" alt="" class="fullscreen-image">
+                <div class="content">
+                    <h2>Filtro dia de muertos</h2>
+                    <p></p>
+                </div>
+            </div>
+            <!-- Añadir más slides aquí -->
         </div>
+        <div class="controls">
+            <button class="control prev">&lt;</button>
+            <button class="control next">&gt;</button>
         </div>
-</div>
-
-</div>
-</div>
-
-<!--CONTACT PAGE-->
-
-
-
+        <div class="mini-menu">
+            <div class="preview">Slide 1</div>
+            <div class="preview">Slide 2</div>
+            <div class="preview">Slide 3</div>
+            <div class="preview">Slide 4</div> <br>
+            <div class="preview">Slide 5</div>
+            <div class="preview">Slide 6</div>
+            <div class="preview">Slide 7</div>
+            <div class="preview">Slide 8</div>
+            <!-- Añadir previews adicionales aquí -->
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"
-    ></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bez.js"></script>
-    <script src="js/pace.js"></script>
-    <script src="js/index.js"></script>
+    <script src="scripts.js"></script>
     <script>
-       $(function(){
-    //marine-slideshow
-    var slide_index = 1;  
-    displaySlides(slide_index);  
-    function nextSlide() {  
-        displaySlides(slide_index++);  
-    }  
-    function prevslide() {  
-      displaySlides(slide_index--);   
-    }  
-    function displaySlides() {  
-        var i;  
-        var slides = document.getElementsByClassName("slides");  
-        if (slide_index > slides.length ) { slide_index = 1 } 
-        if (slide_index < 1) { slide_index = slides.length }  
-        for (i = 0; i < slides.length; i++) {  
-            slides[i].style.opacity = 0;  
-           
-        }  
-        slides[slide_index - 1].style.opacity = 1;  
-         
-      }
-      var next = document.getElementById('next');
-      next.addEventListener('click',nextSlide);
-
-      var prev = document.getElementById('prev');
-      prev.addEventListener('click',prevslide);
-  })
-
-  //forest slideshow
-
-  $(function(){
-    var slide_index = 1;  
-    displaySlides(slide_index);  
-    function nextSlide() {  
-        displaySlides(slide_index++);  
-    }  
-    function prevslide() {  
-      displaySlides(slide_index--);   
-    }  
-    function displaySlides() {  
-        var i;  
-        var slides = document.getElementsByClassName("forest-slides");  
-        if (slide_index > slides.length ) { slide_index = 1 } 
-        if (slide_index < 1) { slide_index = slides.length }  
-        for (i = 0; i < slides.length; i++) {  
-            slides[i].style.opacity = 0;  
-           
-        }  
-        slides[slide_index - 1].style.opacity = 1;  
-         
-      }
-      var next = document.getElementById('forest-next');
-      next.addEventListener('click',nextSlide);
-
-      var prev = document.getElementById('forest-prev');
-      prev.addEventListener('click',prevslide);
-  })
-  
-  //wildlife slideshow
-
-  $(function(){
-    var slide_index = 1;  
-    displaySlides(slide_index);  
-    function nextSlide() {  
-        displaySlides(slide_index++);  
-    }  
-    function prevslide() {  
-      displaySlides(slide_index--);   
-    }  
-    function displaySlides() {  
-        var i;  
-        var slides = document.getElementsByClassName("wildlife-slides");  
-        if (slide_index > slides.length ) { slide_index = 1 } 
-        if (slide_index < 1) { slide_index = slides.length }  
-        for (i = 0; i < slides.length; i++) {  
-            slides[i].style.opacity = 0;  
-           
-        }  
-        slides[slide_index - 1].style.opacity = 1;  
-         
-      }
-      var next = document.getElementById('wildlife-next');
-      next.addEventListener('click',nextSlide);
-
-      var prev = document.getElementById('wildlife-prev');
-      prev.addEventListener('click',prevslide);
-  })
-
-
-    //city slideshow
-
-    $(function(){
-      var slide_index = 1;  
-      displaySlides(slide_index);  
-      function nextSlide() {  
-          displaySlides(slide_index++);  
-      }  
-      function prevslide() {  
-        displaySlides(slide_index--);   
-      }  
-      function displaySlides() {  
-          var i;  
-          var slides = document.getElementsByClassName("city-slides");  
-          if (slide_index > slides.length ) { slide_index = 1 } 
-          if (slide_index < 1) { slide_index = slides.length }  
-          for (i = 0; i < slides.length; i++) {  
-              slides[i].style.opacity = 0;  
-             
-          }  
-          slides[slide_index - 1].style.opacity = 1;  
-           
-        }
-        var next = document.getElementById('city-next');
-        next.addEventListener('click',nextSlide);
-  
-        var prev = document.getElementById('city-prev');
-        prev.addEventListener('click',prevslide);
-
-      
-    })
-
-    document.getElementById("muteButton").addEventListener("click", function() {
+        document.getElementById("muteButton").addEventListener("click", function() {
     var video = document.getElementById("myVideo");
 
     if (video.muted) {
@@ -604,34 +164,7 @@ graduated in 2009
         this.textContent = "Unmute";
     }
 });
-// Función para gestionar el cambio de slides
-function onSlideChange(slideIndex) {
-    var video = document.getElementById("myVideo");
-
-    if (slideIndex === 1) { // Cambia '1' por el índice del slide donde está el video
-        video.muted = false;
-        document.getElementById("muteButton").textContent = "Mute";
-    } else {
-        video.muted = true;
-        document.getElementById("muteButton").textContent = "Unmute";
-    }
-}
-// Ejemplo de cómo podrías detectar el cambio de slide
-var currentSlide = 0;
-function changeSlide(newSlideIndex) {
-    onSlideChange(newSlideIndex);
-    currentSlide = newSlideIndex;
-}
-
-
-
-
-
-
-
-
     </script>
+</body>
 
-    
-  </body>
 </html>

@@ -1,0 +1,152 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo Ciudad de México</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-content" style="display: none;"></div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/HALO blanco.png" alt="Logotipo">
+        </div>
+        <div class="menu-icon" id="menuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="page" class="page">
+        <div class="content-wrapper ">
+            <img src="/img/FONDO-mapa.png" alt="Fondo" class="background-img">
+            <div class="">
+
+                <div class="content-rect">
+                    <!-- <img src="/HALO-RevistaDigital/v2/img/mapabg.jpg" alt="Mapa de fondo" class="map-background"> -->
+                    <img src="/img/PORTADA-mapa.png" alt="Mapa de fondo" class="background-image">
+                    
+                    <!-- Pin 1 -->
+                    <div class="pin" id="pin1" style="top: 50%; left: 57%;" >
+                        <div class="info">
+                            <a href="https://g.co/kgs/jmVwx26"><h3 class="blanco">Auditorio Nacional</h3></a>
+                            <p class="blanco">Descubre el Auditorio Nacional, uno de los principales recintos culturales de México.</p>
+                            <!-- <img src="/HALO-RevistaDigital/v2/img/auditorio.jpg" alt="Imagen relacionada 1" class="pin-image"> -->
+                            <img src="/img/auditorio.jpg" alt="Imagen relacionada 1" class="pin-image">
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Pin 2 -->
+                    <div class="pin" id="pin2" style="top: 45%; left: 40%;">
+                        <div class="info">
+                            <h3 class="blanco">Hipódromo de las Américas</h3>
+                            <p class="blanco">Visita el Hipódromo de las Américas, el lugar ideal para disfrutar de emocionantes carreras de caballos y eventos sociales.</p>
+                                <!-- <img src="/HALO-RevistaDigital/v2/img/2.jpg" alt="Imagen relacionada 2" class="pin-image"> -->
+                            <img src="/img/2.png" alt="Imagen relacionada 2" class="pin-image">
+                        </div>
+                    </div>
+                    
+                    <!-- Pin 3 -->
+                    <div class="pin" id="pin3" style="top: 22%; left: 55%;">
+                        <div class="info">
+                            <h3 class="blanco">Parque Bicentenario</h3>
+                            <p class="blanco">Explora el Parque Bicentenario, un espacio verde urbano que celebra la historia y la cultura de México.</p>
+                                 <!-- <img src="/HALO-RevistaDigital/v2/img/3.jpg" alt="Imagen relacionada 3" class="pin-image"> -->
+                            <img src="/img/3.png" alt="Imagen relacionada 3" class="pin-image">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            
+            
+            
+        </div>
+        <div class="controls-container">
+            <div class="controls">
+                <a href="/page3.html" class="control prev">&lt;</a>
+                <span class="slide-indicator">4/8</span>
+                <a href="/page5.html" class="control next">&gt;</a>
+            </div>
+            <div class="index-menu">
+                <button class="index-toggle">Índice</button>
+                <div class="index-content">
+                    <a href="/page1.html" class="index-item">
+                        <img src="/img/Portadaindice.png" alt="Slide 1">
+                        <span class="index-title">Bienvenida</span> <!-- Título del Slide 1 -->
+                    </a>
+                    
+                    <a href="/page2.html" class="index-item">
+                        <img src="/img/recorrido-museo.png" alt="Slide 2">
+                        <span class="index-title">Explora México</span> <!-- Título del Slide 2 -->
+                    </a>
+                    
+                    <a href="/page3.html" class="index-item">
+                        <img src="/img/recorrido-teotihuacan.png" alt="Slide 3">
+                        <span class="index-title">Nuestra Cultura</span> <!-- Título del Slide 3 -->
+                    </a>
+                    
+                    <a href="/page4.html" class="index-item">
+                        <img src="/img/INDICE-mapa.png" alt="Slide 4">
+                        <span class="index-title">Gastronomía</span> <!-- Título del Slide 4 -->
+                    </a>
+                    
+                    <a href="/page5.html" class="index-item">
+                        <img src="/img/indicepodcast.png" alt="Slide 5">
+                        <span class="index-title">Historia y Tradición</span> <!-- Título del Slide 5 -->
+                    </a>
+                    
+                    <a href="/page6.html" class="index-item">
+                        <img src="/img/gastronomia.png" alt="Slide 6">
+                        <span class="index-title">Lugares Increíbles</span> <!-- Título del Slide 6 -->
+                    </a>
+                    
+                    <a href="/page7.html" class="index-item">
+                        <img src="/img/INDICE-filtro.png" alt="Slide 7">
+                        <span class="index-title">Naturaleza Viva</span> <!-- Título del Slide 7 -->
+                    </a>
+                    
+                    <a href="/page8.html" class="index-item">
+                        <img src="/img/inteligencia.png" alt="Slide 8">
+                        <span class="index-title">Arte y Artesanías</span> <!-- Título del Slide 8 -->
+                    </a>
+                    <!-- Agregar más slides aquí -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="scripts.js"></script>
+<script>
+    // Toggle menu for mobile
+    document.getElementById('menuIcon').addEventListener('click', function() {
+        document.getElementById('navLinks').classList.toggle('active');
+    });
+     // Toggle the index menu on click
+     document.querySelector('.index-toggle').addEventListener('click', function() {
+            document.querySelector('.index-menu').classList.toggle('active');
+        });
+        // scripts.js
+
+document.querySelector('.index-toggle').addEventListener('click', function() {
+    const indexContent = document.querySelector('.index-content');
+    indexContent.style.display = indexContent.style.display === 'block' ? 'none' : 'block';
+});
+
+document.querySelector('.index-toggle').addEventListener('click', function() {
+    const indexContent = document.querySelector('.index-content');
+    indexContent.classList.toggle('show');
+});
+
+</script>
+</html>
+
